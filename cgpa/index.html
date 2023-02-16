@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\HP\Desktop\cgpa\cal1.png">
+    <style>
+        #container{
+            display: grid;
+            grid-template-areas:
+            'head head head'
+            'main main main'
+       }
+        #head{
+            border: 4px solid black;
+            grid-area: head;
+            background-color: lightgreen;
+        }
+        #main{
+            grid-area: main;
+            display: grid;
+            border: 4px solid black;
+            background-color: lightblue;
+            grid-template-areas:
+            'box ma1' 
+          }
+        #box{
+            grid-area: box;
+        }
+
+        .ma1{
+            grid-area: ma1
+        } 
+        #container div{
+            margin: 10px;
+        }
+        label{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          background-color: bisque;
+        }
+        button{
+            background-color: brown;
+            color:white
+        }
+        input {
+          border:2px solid red;
+          width: 10%
+        }
+        p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        
+    <div id="head">
+        <h1><span><img class="a" src="C:\Users\HP\Desktop\cgpa\cal1.png" alt="HELLO" width="65px" style="border:1px bold red;border-radius:100%"></span>CGPA CALCULATOR NATIONAL ENGINEERING COLLEGE</h1>
+    </div>
+    <div id="main">
+        <div id="box"><button id="btn">Click to add subjects</button><br>
+            <br><label for='her'>Enter the grade points and credit points one by one</label>
+           
+        </div>
+        <div class="ma1">
+            <p>Click to see GPA---><button id="btnResult">Result</button></p>
+            <div class="form-popup" id="myForm">
+                  <label for="email"><b>YOUR RESULT</b></label>
+                  <input id="typ" type="text">
+              </div>
+              <label id="best" for='her'>ALL THE BEST</label>  
+        </div>
+    </div>
+    
+    </div>
+    <script src="C:\Users\HP\Desktop\cgpa\script.js"></script>
+</body>
+</html>
